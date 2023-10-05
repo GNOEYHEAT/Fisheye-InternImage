@@ -116,7 +116,7 @@ sh dist_train.sh configs/samsung/exp_01
 ```
 ### Citation
 ```bash
-@article{wang2022internimage,
+<font color="red">@article</font>{wang2022internimage,
   title={InternImage: Exploring Large-Scale Vision Foundation Models with Deformable Convolutions},
   author={Wang, Wenhai and Dai, Jifeng and Chen, Zhe and Huang, Zhenhang and Li, Zhiqi and Zhu, Xizhou and Hu, Xiaowei and Lu, Tong and Lu, Lewei and Li, Hongsheng and others},
   journal={arXiv preprint arXiv:2211.05778},
