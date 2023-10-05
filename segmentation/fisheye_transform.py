@@ -64,6 +64,10 @@ mask_target_gt[360:-360, 120:-120] = True
 
 print("Fisheye Transformation: train_source_image")
 
+directory = "data/preprocess_data/train_fisheye_image/"
+if not os.path.exists(directory):
+    os.makedirs(directory)
+
 train_source_image_path = 'data/train_source_image/'
 
 for i in tqdm(os.listdir(train_source_image_path)):
@@ -73,9 +77,13 @@ for i in tqdm(os.listdir(train_source_image_path)):
     image2 = mean_target_image * np.where(mask_target_gt, False, True)[:, :, np.newaxis]
     image = image1 + image2
     image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
-    cv2.imwrite("data/preprocess_data/train_fisheye_image/"+i, image)
+    cv2.imwrite(directory+i, image)
 
 print("Fisheye Transformation: val_source_image")
+
+directory = "data/preprocess_data/val_fisheye_image/"
+if not os.path.exists(directory):
+    os.makedirs(directory)
 
 val_source_image_path = 'data/val_source_image/'
 
@@ -86,9 +94,13 @@ for i in tqdm(os.listdir(val_source_image_path)):
     image2 = mean_target_image * np.where(mask_target_gt, False, True)[:, :, np.newaxis]
     image = image1 + image2
     image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
-    cv2.imwrite("data/preprocess_data/val_fisheye_image/"+i, image)
+    cv2.imwrite(directory+i, image)
 
 print("Fisheye Transformation: train_source_gt")
+
+directory = "data/preprocess_data/train_fisheye_gt/"
+if not os.path.exists(directory):
+    os.makedirs(directory)
 
 train_source_gt_path = 'data/train_source_gt/'
 
@@ -97,9 +109,13 @@ for i in tqdm(os.listdir(train_source_gt_path)):
     image = np.array(image)
     image+=1
     image = image * mask_target_gt
-    cv2.imwrite("data/preprocess_data/train_fisheye_gt/"+i, image)
+    cv2.imwrite(directory+i, image)
 
 print("Fisheye Transformation: val_source_gt")
+
+directory = "data/preprocess_data/val_fisheye_gt/"
+if not os.path.exists(directory):
+    os.makedirs(directory)
 
 val_source_gt_path = 'data/val_source_gt/'
 
@@ -108,6 +124,6 @@ for i in tqdm(os.listdir(val_source_gt_path)):
     image = np.array(image)
     image+=1
     image = image * mask_target_gt
-    cv2.imwrite("data/preprocess_data/val_fisheye_gt/"+i, image)
+    cv2.imwrite(directory+i, image)
 
 print("end")
