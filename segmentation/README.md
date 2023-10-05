@@ -98,7 +98,7 @@ python test.py configs/ade20k/upernet_internimage_t_512_160k_ade20k.py checkpoin
 For example, to evaluate the `InternImage-B` with a single node with 8 GPUs:
 
 ```bash
-sh dist_test.sh configs/ade20k/upernet_internimage_b_512_160k_ade20k.py checkpoint_dir/seg/upernet_internimage_b_512_160k_ade20k.pth 8 --eval mIoU
+sh dist_test.sh configs/samsung/upernet_internimage_b_512_160k_ade20k.py checkpoint_dir/seg/upernet_internimage_b_512_160k_ade20k.pth 8 --eval mIoU
 ```
 
 ### Training
@@ -109,8 +109,8 @@ To train our model on preprocess_data, run:
 sh dist_train.sh <config-file> <gpu-num>
 ```
 
-For example, to train `InternImage-T` with 8 GPU on 1 node (total batch size 16), run:
+For example, to train `이름 수정(exp_01)` with 8 GPU on 1 node (total batch size 16), run:
 
 ```bash
-sh dist_train.sh configs/ade20k/upernet_internimage_t_512_160k_ade20k.py 8
+sh dist_train.sh configs/samsung/exp_01
 ```
