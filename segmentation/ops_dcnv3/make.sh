@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+# !/usr/bin/env bash
 # --------------------------------------------------------
 # InternImage
 # Copyright (c) 2022 OpenGVLab
