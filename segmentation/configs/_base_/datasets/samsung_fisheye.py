@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'SamsungDataset'
-data_root = 'data/preprocess_data/'
+data_root = 'data/'
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
 
@@ -44,14 +44,14 @@ data = dict(
     train=dict(
         type=dataset_type,
         data_root=data_root,
-        img_dir='train_fisheye_image',
-        ann_dir='train_fisheye_gt',
+        img_dir='preprocess_data/train_fisheye_image',
+        ann_dir='preprocess_data/train_fisheye_gt',
         pipeline=train_pipeline),
     val=dict(
         type=dataset_type,
         data_root=data_root,
-        img_dir='val_fisheye_image',
-        ann_dir='val_fisheye_gt',
+        img_dir='preprocess_data/val_fisheye_image',
+        ann_dir='preprocess_data/val_fisheye_gt',
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
