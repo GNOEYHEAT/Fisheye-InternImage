@@ -10,7 +10,7 @@ If you would like to know more about the competition, please refer to the follow
 * 주관 : DACON
 
 ## Usage
-Change to the "segmentation" directory and follow the README.md
+Change to the **"segmentation"** directory and follow the README.md
 
 ## Directory Structure
 <pre><code>
