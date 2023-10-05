@@ -48,6 +48,14 @@ pip install -U openmim
 mim install mmcv-full==1.5.0
 mim install mmsegmentation==0.27.0
 pip install timm==0.6.11 mmdet==2.28.1
+
+if "ERROR: Cannot uninstall 'PyYAML'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall." error occurs when installing openmim:
+
+conda remove pyyaml
+pip install -U openmim
+mim install mmcv-full==1.5.0
+mim install mmsegmentation==0.27.0
+pip install timm==0.6.11 mmdet==2.28.1
 ```
 
 - Compile CUDA operators
