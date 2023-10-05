@@ -37,8 +37,9 @@ conda install -c conda-forge cudatoolkit-dev=11.3 -y # to install nvcc
   note: conda opencv will break torchvision as not to support GPU, so we need to install opencv using pip. 	  
 
 ```bash
-conda install -c conda-forge termcolor yacs pyyaml scipy pip -y
+conda install -c conda-forge termcolor yacs pyyaml scipy seaborn pip -y 
 pip install opencv-python
+
 ```
 
 - Install `timm` and `mmcv-full` and `mmsegmentation':
@@ -78,7 +79,7 @@ To transform original data into fisheye-data, run:
 python fisheye_transform.py
 ```
 
-### Evaluation
+### Inference
 
 To evaluate our model on ADE20K val, run:
 
