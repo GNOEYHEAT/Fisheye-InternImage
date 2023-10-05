@@ -123,4 +123,5 @@ sh dist_train.sh configs/samsung/exp_01
   year={2022}
 }
 ```
-
+### Acknowledgements
+This code is heavily borrowed from [**INTERNIMAGE**](https://github.com/OpenGVLab/InternImage)
