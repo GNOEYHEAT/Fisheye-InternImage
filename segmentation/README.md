@@ -12,14 +12,14 @@ Our segmentation code is developed on top of [MMSegmentation v0.27.0](https://gi
 
 ```bash
 git clone https://github.com/GNOEYHEAT/Fisheye-InternImage.git
-cd InternImage
+cd Fisheye-InternImage/segmentation
 ```
 
 - Create a conda virtual environment and activate it:
 
 ```bash
-conda create -n internimage python=3.7 -y
-conda activate internimage
+conda create -n fisheye python=3.7 -y
+conda activate fisheye
 ```
 
 - Install `CUDA>=10.2` with `cudnn>=7` following
@@ -62,12 +62,17 @@ python test.py
 
 ### Data Preparation
 
-Prepare datasets according to the [guidelines](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/en/dataset_prepare.md#prepare-datasets) in MMSegmentation.
+Prepare datasets according to the [guidelines] (https://github.com/GNOEYHEAT/Fisheye-InternImage/blob/main/README.md)
 
+### FishEye Transformation
+To transform original data into fisheye-data, run:
+```bash
+python fisheye_transform.py
+```
 
 ### Evaluation
 
-To evaluate our `InternImage` on ADE20K val, run:
+To evaluate our model on ADE20K val, run:
 
 ```bash
 sh dist_test.sh <config-file> <checkpoint> <gpu-num> --eval mIoU
@@ -88,7 +93,7 @@ sh dist_test.sh configs/ade20k/upernet_internimage_b_512_160k_ade20k.py checkpoi
 
 ### Training
 
-To train an `InternImage` on ADE20K, run:
+To train our model on preprocess_data, run:
 
 ```bash
 sh dist_train.sh <config-file> <gpu-num>
