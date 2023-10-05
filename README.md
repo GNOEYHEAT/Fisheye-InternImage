@@ -1,6 +1,6 @@
 # Fisheye-InternImage
 
-The following codes are the solutions (3st place, private score: 0.66886) for the dacon competition.
+The following codes are the solutions **(3st place, private score: 0.66886)** for the dacon competition.
 If you would like to know more about the competition, please refer to the following link:
 https://dacon.io/competitions/official/236132/overview/description
 
