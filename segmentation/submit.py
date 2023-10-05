@@ -55,6 +55,9 @@ for pred in tqdm(y_preds):
         else: # 마스크가 존재하지 않는 경우 -1
             result.append(-1)
 
+if not os.path.exists("submission/"):
+    os.makedirs("submission/")
+
 sample_submission = pd.read_csv('data/sample_submission.csv')
 sample_submission['mask_rle'] = result
 sample_submission.to_csv(f'submission/{args.pkl_name}.csv', index=False)
