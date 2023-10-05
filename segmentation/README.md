@@ -11,7 +11,7 @@ Our segmentation code is developed on top of [MMSegmentation v0.27.0](https://gi
 - Clone this repo:
 
 ```bash
-git clone https://github.com/OpenGVLab/InternImage.git
+git clone https://github.com/GNOEYHEAT/Fisheye-InternImage.git
 cd InternImage
 ```
 
