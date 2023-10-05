@@ -39,6 +39,9 @@ Move to the **"segmentation"** directory and follow the *README.md*
 │   ├── val_source_image
 │   ├── sample_submission.csv
 │   ├── test.csv
+│   ├── train_source.csv
+│   ├── train_target.csv
+│   ├── val_source.csv
 ├── results
 │   ├── exp_04.pkl
 │   ├── exp_05.pkl
