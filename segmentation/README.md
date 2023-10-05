@@ -115,7 +115,7 @@ For example, to train `이름 수정(exp_01)` with 8 GPU on 1 node (total batch 
 sh dist_train.sh configs/samsung/exp_01
 ```
 ### Citation
-```bash
+```html
 <span style="color:yellow">@article</span>{wang2022internimage,
   title={InternImage: Exploring Large-Scale Vision Foundation Models with Deformable Convolutions},
   author={Wang, Wenhai and Dai, Jifeng and Chen, Zhe and Huang, Zhenhang and Li, Zhiqi and Zhu, Xizhou and Hu, Xiaowei and Lu, Tong and Lu, Lewei and Li, Hongsheng and others},
