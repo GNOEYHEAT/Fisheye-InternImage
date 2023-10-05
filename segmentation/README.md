@@ -39,6 +39,7 @@ conda install -c conda-forge cudatoolkit-dev=11.3 -y # to install nvcc
 ```bash
 conda install -c conda-forge termcolor yacs pyyaml scipy seaborn pip -y 
 pip install opencv-python
+pip install yapf==0.40.1
 
 ```
 
