@@ -66,8 +66,8 @@ The final submission is **exp_04**.
 
 | Index      | Model       | Private mIoU | Public mIoU | Val mIoU (%) | Iter  | Fine-tuned model | Pre-trained model |
 |------------|-------------|--------------|-------------|--------------|-------|------------------|-------------------|
-| exp_01     | UperNet     | 0.64483      | 0.6192      | 67.30        | 20000 | [ckpt]()         | [ckpt](https://huggingface.co/OpenGVLab/InternImage/resolve/main/internimage_h_jointto22k_384.pth) |
-| exp_02     | Mask2Former | 0.66456      | 0.62771     | 66.01        | 9000  | [ckpt]()         | [ckpt](https://huggingface.co/OpenGVLab/InternImage/resolve/main/mask2former_internimage_h_896_80k_cocostuff164k.pth) |
-| exp_03     | UperNet     | 0.65114      | 0.62775     | 68.03        | 14000 | [ckpt]()         | [ckpt](https://huggingface.co/OpenGVLab/InternImage/resolve/main/internimage_h_jointto22k_384.pth) |
+| exp_01     | UperNet     | 0.64483      | 0.6192      | 67.30        | 20000 | -                | [ckpt](https://huggingface.co/OpenGVLab/InternImage/resolve/main/internimage_h_jointto22k_384.pth) |
+| exp_02     | Mask2Former | 0.66456      | 0.62771     | 66.01        | 9000  | -                | [ckpt](https://huggingface.co/OpenGVLab/InternImage/resolve/main/mask2former_internimage_h_896_80k_cocostuff164k.pth) |
+| exp_03     | UperNet     | 0.65114      | 0.62775     | 68.03        | 14000 | -                | [ckpt](https://huggingface.co/OpenGVLab/InternImage/resolve/main/internimage_h_jointto22k_384.pth) |
 | **exp_04** | Mask2Former | **0.66886**  | 0.63133     | 70.34        | 22000 | [ckpt]()         | [ckpt](https://huggingface.co/OpenGVLab/InternImage/resolve/main/mask2former_internimage_h_896_80k_cocostuff164k.pth) |
 | exp_05     | Mask2Former | 0.67288      | 0.62905     | -            | 40000 | [ckpt]()         | [ckpt](https://huggingface.co/OpenGVLab/InternImage/resolve/main/mask2former_internimage_h_896_80k_cocostuff164k.pth) |
