@@ -72,7 +72,7 @@ python test.py
 
 ### Data Preparation
 
-Prepare datasets according to the [guidelines](https://github.com/GNOEYHEAT/Fisheye-InternImage/blob/main/README.md)
+Prepare datasets according to the [directory structure guideline](https://github.com/GNOEYHEAT/Fisheye-InternImage/blob/main/README.md)
 
 ### Fisheye Transformation
 To transform original data into fisheye-data, run:
