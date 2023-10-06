@@ -89,15 +89,15 @@ python test.py <config-file> <checkpoint> --out <pickle-file>
 python submit.py --pkl_name <pickle-file>
 ```
 
-You can download checkpoint files from [here](https://huggingface.co/OpenGVLab/InternImage/tree/fc1e4e7e01c3e7a39a3875bdebb6577a7256ff91). Then place it to segmentation/work_dirs/exp_04.
+You can download checkpoint files from [here](https://huggingface.co/lamar041523/Fisheye-InternImage/resolve/main/best_mIoU_iter_22000.pth). Then place it to segmentation/work_dirs/exp_04.
 
-For example, to evaluate the `exp_04` with a single GPU:
+For example, to evaluate the `exp_04`:
 
 ```bash
 python test.py configs/samsung/exp_04.py work_dirs/exp_04/best_mIoU_iter_22000.pth --out results/exp_04.pkl
 ```
 
-For example, to submit the `exp_04`
+For example, to submit the `exp_04`:
 
 ```bash
 python submit.py --pkl_name exp_04
