@@ -111,6 +111,12 @@ To train our model on preprocess_data, run:
 sh dist_train.sh <config-file> <gpu-num>
 ```
 
+or another run with a single GPU:
+
+```bash
+python train.py <config-file>
+```
+
 For example, to train `exp_04` with 2 GPU on 1 node (total batch size 4), run:
 
 ```bash
