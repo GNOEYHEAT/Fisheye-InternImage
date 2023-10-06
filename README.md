@@ -62,7 +62,7 @@ Move to the **"segmentation"** directory and follow the *README.md*
 
 ## Experiments
 
-The final submission is exp_04.
+The final submission is **exp_04**.
 
 | Index      | Model       | Private mIoU | Public mIoU | Val mIoU (%) | Iter  | Fine-tuned model | Pre-trained model |
 |------------|-------------|--------------|-------------|--------------|-------|------------------|-------------------|
