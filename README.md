@@ -26,7 +26,7 @@ Move to the **"segmentation"** directory and follow the *README.md*
 │   │   ├── exp_04.py
 │   │   ├── exp_05.py
 ├── data
-│   ├── preprocess_data
+│   ├── preprocess_data (will be made after running fisheye_transform.py)
 │   │   ├── train_fisheye_gt
 │   │   ├── train_fisheye_image
 │   │   ├── val_fisheye_gt
