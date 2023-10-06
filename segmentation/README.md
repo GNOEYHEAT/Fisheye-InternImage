@@ -115,14 +115,3 @@ For example, to train `exp_04` with 2 GPU on 1 node (total batch size 4), run:
 ```bash
 sh dist_train.sh configs/samsung/exp_04.py 2 -seed 826
 ```
-### Citation
-```bibtex
-@article{wang2022internimage,
-  title={InternImage: Exploring Large-Scale Vision Foundation Models with Deformable Convolutions},
-  author={Wang, Wenhai and Dai, Jifeng and Chen, Zhe and Huang, Zhenhang and Li, Zhiqi and Zhu, Xizhou and Hu, Xiaowei and Lu, Tong and Lu, Lewei and Li, Hongsheng and others},
-  journal={arXiv preprint arXiv:2211.05778},
-  year={2022}
-}
-```
-### Acknowledgements
-This code is heavily borrowed from [**INTERNIMAGE**](https://github.com/OpenGVLab/InternImage)
