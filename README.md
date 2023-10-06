@@ -48,6 +48,9 @@ Move to the **"segmentation"** directory and follow the *README.md*
 ├── submission
 │   ├── exp_04.csv
 │   ├── exp_05.csv
+├── work_dirs
+│   ├── exp_04
+│   │   ├── best_mIoU_iter_22000.pth
 ├── fisheye_transform.py
 ├── submit.py
 ├── test.py
