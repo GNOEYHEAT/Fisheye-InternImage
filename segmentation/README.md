@@ -74,7 +74,7 @@ python test.py
 
 Prepare datasets according to the [guidelines] (https://github.com/GNOEYHEAT/Fisheye-InternImage/blob/main/README.md)
 
-### FishEye Transformation
+### Fisheye Transformation
 To transform original data into fisheye-data, run:
 ```bash
 python fisheye_transform.py
