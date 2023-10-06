@@ -82,23 +82,24 @@ python fisheye_transform.py
 
 ### Inference
 
-To evaluate our model on ADE20K val, run:
+To evaluate our model on preprocess_data val, run:
 
 ```bash
 sh dist_test.sh <config-file> <checkpoint> <gpu-num> --eval mIoU
+
 ```
 You can download checkpoint files from [here](https://huggingface.co/OpenGVLab/InternImage/tree/fc1e4e7e01c3e7a39a3875bdebb6577a7256ff91). Then place it to segmentation/checkpoint_dir/seg.
 
-For example, to evaluate the `InternImage-T` with a single GPU:
+For example, to evaluate the `exp_04` with a single GPU:
 
 ```bash
-python test.py configs/ade20k/upernet_internimage_t_512_160k_ade20k.py checkpoint_dir/seg/upernet_internimage_t_512_160k_ade20k.pth --eval mIoU
+python test.py configs/samsung/exp_04.py work_dirs/exp_04/best_mIoU_iter_22000.pth --out results/exp_04.pkl
 ```
 
-For example, to evaluate the `InternImage-B` with a single node with 8 GPUs:
+For example, to submit the `exp_04`
 
 ```bash
-sh dist_test.sh configs/samsung/upernet_internimage_b_512_160k_ade20k.py checkpoint_dir/seg/upernet_internimage_b_512_160k_ade20k.pth 8 --eval mIoU
+python submit.py --pkl_name exp_04
 ```
 
 ### Training
