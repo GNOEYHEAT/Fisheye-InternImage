@@ -82,16 +82,16 @@ python fisheye_transform.py
 
 ### Submission Guideline
 
-To submit our model on preprocess_data test, run:
+To submit our model on test data, run:
 
 ```bash
 python test.py <config-file> <checkpoint> --out <pickle-file>
 python submit.py --pkl_name <pickle-file>
 ```
 
-You can download checkpoint files from [here](https://huggingface.co/lamar041523/Fisheye-InternImage/resolve/main/best_mIoU_iter_22000.pth). Then place it to segmentation/work_dirs/exp_04.
+You can download checkpoint files from [here](https://huggingface.co/lamar041523/Fisheye-InternImage/resolve/main/exp_04/best_mIoU_iter_22000.pth). Then place it to segmentation/work_dirs/exp_04.
 
-For example, to evaluate the `exp_04`:
+For example, to inference the `exp_04`:
 
 ```bash
 python test.py configs/samsung/exp_04.py work_dirs/exp_04/best_mIoU_iter_22000.pth --out results/exp_04.pkl
