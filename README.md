@@ -59,3 +59,12 @@ Move to the **"segmentation"** directory and follow the *README.md*
       .
       .
 </code></pre>
+
+## Experiments
+| Index    | Model | Private mIoU | Public mIoU | Val mIoU (%) | Iter | Fine-tuned model                                     | Pre-trained model |
+|----------|------------|------------|-----------|-------------|-------------|-------------------------------------------|-----------|
+| exp_01     | UperNet    | 0.64483    | 0.6192    | 67.30      | 20000      | blip-itm-large-coco, is384, tl102         | 8         |
+| exp_02     | Mask2Former    | 0.66456    | 0.62771    | 66.01      | 9000      | blip-itm-large-coco, is384, tl102         | [ckpt](https://huggingface.co/OpenGVLab/InternImage/resolve/main/mask2former_internimage_h_896_80k_cocostuff164k.pth)         |
+| exp_03     | UperNet      | 0.65114    | 0.62775    | 68.03      | 14000      | blip-itm-large-flickr, is384, tl102       | 4         |
+| exp_04     | Mask2Former     | 0.66886    | 0.63133    | 70.34      | 22000      | blip-image-captioning-large, is384, tl102 | [ckpt](https://huggingface.co/OpenGVLab/InternImage/resolve/main/mask2former_internimage_h_896_80k_cocostuff164k.pth)         |
+| exp_05      | Mask2Former     | 0.67288    | 0.62905    | -      | 40000      | git-large-coco, is480, tl102              | [ckpt](https://huggingface.co/OpenGVLab/InternImage/resolve/main/mask2former_internimage_h_896_80k_cocostuff164k.pth)         |
