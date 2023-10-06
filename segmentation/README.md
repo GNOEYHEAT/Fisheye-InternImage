@@ -80,15 +80,16 @@ To transform original data into fisheye-data, run:
 python fisheye_transform.py
 ```
 
-### Inference
+### Submission Guideline
 
-To evaluate our model on preprocess_data val, run:
+To submit our model on preprocess_data test, run:
 
 ```bash
-sh dist_test.sh <config-file> <checkpoint> <gpu-num> --eval mIoU
-
+python test.py <config-file> <checkpoint> --out <pickle-file>
+python submit.py --pkl_name <pickle-file>
 ```
-You can download checkpoint files from [here](https://huggingface.co/OpenGVLab/InternImage/tree/fc1e4e7e01c3e7a39a3875bdebb6577a7256ff91). Then place it to segmentation/checkpoint_dir/seg.
+
+You can download checkpoint files from [here](https://huggingface.co/OpenGVLab/InternImage/tree/fc1e4e7e01c3e7a39a3875bdebb6577a7256ff91). Then place it to segmentation/work_dirs/exp_04.
 
 For example, to evaluate the `exp_04` with a single GPU:
 
