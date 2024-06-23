@@ -71,4 +71,3 @@ The final submission is **exp_04**.
 | exp_03     | UperNet     | 0.65114      | 0.62775     | 68.03        | 14000 | [ckpt](https://huggingface.co/GNOEYHEAT/Fisheye-InternImage/blob/main/exp_03/best_mIoU_iter_14000.pth) | [ckpt](https://huggingface.co/OpenGVLab/InternImage/resolve/main/internimage_h_jointto22k_384.pth) |
 | **exp_04** | Mask2Former | **0.66886**  | 0.63133     | 70.34        | 22000 | [ckpt](https://huggingface.co/GNOEYHEAT/Fisheye-InternImage/resolve/main/exp_04/best_mIoU_iter_22000.pth) | [ckpt](https://huggingface.co/OpenGVLab/InternImage/resolve/main/mask2former_internimage_h_896_80k_cocostuff164k.pth) |
 | exp_05     | Mask2Former | 0.67288      | 0.62905     | -            | 40000 | [ckpt](https://huggingface.co/GNOEYHEAT/Fisheye-InternImage/blob/main/exp_05/iter_40000.pth) | [ckpt](https://huggingface.co/OpenGVLab/InternImage/resolve/main/mask2former_internimage_h_896_80k_cocostuff164k.pth) |
-
